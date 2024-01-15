@@ -9,7 +9,9 @@ const EventItem = props => {
   }
   return (
     <li className="listItem">
-      <img src={imageUrl} alt="event" className="itemImg" onClick={clicked} />
+      <button className="imgButton" onClick={clicked} type="button">
+        <img src={imageUrl} alt="event" className="itemImg" onClick={clicked} />
+      </button>
       <p className="name">{name}</p>
       <p className="location">{location}</p>
     </li>

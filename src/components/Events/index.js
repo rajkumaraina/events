@@ -91,6 +91,27 @@ class Events extends Component {
         className="registerdImg"
         alt="registered"
       />
+      <h1 className="registeredHeading">
+        You have already registered for the event
+      </h1>
+    </div>
+  )
+
+  notRegisteredView = () => (
+    <div className="registered">
+      <img
+        src="https://assets.ccbp.in/frontend/react-js/events-register-img.png"
+        className="registerImg"
+        alt="yet to register"
+      />
+      <p className="registeredpara">
+        A live performance brings so much to your relationship with dance.
+        Seeing dance live can often make you fall totally in love with this art
+        form.
+      </p>
+      <button className="button" type="button">
+        Register Here
+      </button>
     </div>
   )
 
@@ -98,6 +119,18 @@ class Events extends Component {
     <p className="eventDetails">
       Click on an event, to view its registration details
     </p>
+  )
+
+  registrationClosedView = () => (
+    <div className="registered">
+      <img
+        src="https://assets.ccbp.in/frontend/react-js/events-registrations-closed-img.png"
+        className="registerdClosedImg"
+        alt="registrations closed"
+      />
+      <h1 className="registeredHeading">Registrations are closed now!</h1>
+      <p>Stay tuned. We will reopen the registrations soon!</p>
+    </div>
   )
 
   render() {
@@ -109,6 +142,9 @@ class Events extends Component {
         break
       case resultOfEvent.notRegistered:
         eventDetailsViewElement = this.notRegisteredView()
+        break
+      case resultOfEvent.registrationClosed:
+        eventDetailsViewElement = this.registrationClosedView()
         break
       default:
         eventDetailsViewElement = this.renderInitialView()

@@ -3,10 +3,17 @@
   margin: 8px;
   cursor: pointer;
 }
+.imgButton {
+  border: 0 none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: transparent;
+  padding: 0;
+}
 .itemImg {
   width: 270px;
   height: 150px;
-  border-radius: 8px;
   cursor: pointer;
   outline: none;
 }
