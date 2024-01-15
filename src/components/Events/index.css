@@ -1,0 +1,42 @@
+.MainContainer {
+  display: flex;
+}
+.firstContainer {
+  background-color: #64748b;
+  padding: 25px;
+
+  width: 50%;
+}
+.secondContainer {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+}
+.heading {
+  color: #ffffff;
+  margin: 8px;
+}
+.unorderedList {
+  padding: 0px;
+  display: flex;
+
+  flex-wrap: wrap;
+}
+.eventDetails {
+  color: #475569;
+}
+.eventDetails {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+}
+.registered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.registerdImg {
+  width: 80px;
+  height: 80px;
+}

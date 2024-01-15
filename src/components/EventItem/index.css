@@ -1,0 +1,23 @@
+.listItem {
+  list-style-type: none;
+  margin: 8px;
+  cursor: pointer;
+}
+.itemImg {
+  width: 270px;
+  height: 150px;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+}
+.name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #ffffff;
+}
+.location {
+  font-size: 15px;
+  margin-top: 0;
+  color: #ffffff;
+}
